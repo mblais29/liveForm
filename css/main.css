@@ -1,0 +1,24 @@
+*{
+	margin: 0;
+	border: 0;
+}
+
+header{
+	font-weight: bold;
+	padding: 15px 15px 15px 0;
+}
+
+.wrapper{
+    width: 100%;
+    display: block;
+}
+
+input[type="text"], input[type="number"]{
+	margin-bottom: 15px;
+}
+
+.col-md-6{
+	height: 100vh;
+	border: 1px solid black;
+}
+
