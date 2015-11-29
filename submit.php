@@ -1,6 +1,5 @@
 <?php
 
-
 $file = file_get_contents('employees.json', true);
 $firstname=$_POST['firstname'];
 $lastname=$_POST['lastname'];
@@ -20,6 +19,7 @@ if($gender=$_POST['gender'] == 'Female'){
 $data = json_decode($file,true);
 unset($file);
 
+//Selects the input value and creates an array of the users inputs
 $data[] = array('firstname' => $firstname, 'lastname' => $lastname, 'age' => $age, 'sex' => $gender );
 //encodes the new record in JSON Format
 $result=json_encode($data);
